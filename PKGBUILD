@@ -21,7 +21,7 @@ _zfsver="0.7.9"
 _kernelver="4.18.4.zen1-1"
 _extramodules="${_kernelver/.zen/-zen}-zen"
 
-pkgver="${_zfsver}.$(echo ${_kernelver} | sed s/-/./g)"
+pkgver="${_zfsver}_$(echo ${_kernelver} | sed s/-/./g)"
 pkgrel=1
 makedepends=("linux-zen-headers=${_kernelver}" "spl-linux-zen-headers")
 arch=("x86_64")
