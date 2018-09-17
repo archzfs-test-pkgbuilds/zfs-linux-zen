@@ -47,7 +47,7 @@ package_zfs-linux-zen() {
     install=zfs.install
     provides=("zfs")
     groups=("archzfs-linux-zen")
-    conflicts=("zfs-dkms" "zfs-dkms-git"'zfs-linux-zen-git')
+    conflicts=("zfs-dkms" "zfs-dkms-git" 'zfs-linux-zen-git')
     cd "${srcdir}/zfs-${_zfsver}"
     make DESTDIR="${pkgdir}" install
     cp -r "${pkgdir}"/{lib,usr}
