@@ -19,7 +19,8 @@ pkgname = zfs-linux-zen
 	groups = archzfs-linux-zen
 	provides = zfs
 	conflicts = zfs-dkms
-	conflicts = zfs-dkms-gitzfs-linux-zen-git
+	conflicts = zfs-dkms-git
+	conflicts = zfs-linux-zen-git
 
 pkgname = zfs-linux-zen-headers
 	pkgdesc = Kernel headers for the Zettabyte File System.
