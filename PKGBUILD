@@ -48,6 +48,7 @@ package_zfs-linux-zen() {
     provides=("zfs" "spl")
     groups=("archzfs-linux-zen")
     conflicts=("zfs-dkms" "zfs-dkms-git" "zfs-dkms-rc" "spl-dkms" "spl-dkms-git")
+    replaces=("spl-linux-zen")
     cd "${srcdir}/zfs-${_zfsver}"
     make DESTDIR="${pkgdir}" install
     cp -r "${pkgdir}"/{lib,usr}
